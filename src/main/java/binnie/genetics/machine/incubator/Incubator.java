@@ -27,56 +27,56 @@ public class Incubator {
 	public static final int OUTPU_TANK_CAPACITY = 64000;
 
 	public static void addRecipes() {
-		Incubator.RECIPES.add(new IncubatorRecipe(Binnie.Liquid.getLiquidStack("water", 25), GeneticLiquid.GrowthMedium.get(25), 0.2f) {
+		Incubator.RECIPES.add(new IncubatorRecipe(Binnie.Liquid.getLiquidStack("water", 250), GeneticLiquid.GrowthMedium.get(500), 0.2f) {
 			@Override
 			public boolean isItemStack(ItemStack stack) {
 				return GeneticsItems.GrowthMedium.get(1).isItemEqual(stack);
 			}
 		});
 
-		Incubator.RECIPES.add(new IncubatorRecipe(GeneticLiquid.GrowthMedium.get(25), GeneticLiquid.Bacteria.get(5), 0.2f) {
+		Incubator.RECIPES.add(new IncubatorRecipe(GeneticLiquid.GrowthMedium.get(250), GeneticLiquid.Bacteria.get(500), 0.2f) {
 			@Override
 			public boolean isItemStack(ItemStack stack) {
 				return new ItemStack(Items.wheat).isItemEqual(stack);
 			}
 		});
 
-		Incubator.RECIPES.add(new IncubatorRecipe(GeneticLiquid.Bacteria.get(0), GeneticLiquid.Bacteria.get(5), 0.05f) {
+		Incubator.RECIPES.add(new IncubatorRecipe(GeneticLiquid.Bacteria.get(0), GeneticLiquid.Bacteria.get(500), 0.05f) {
 			@Override
 			public boolean isItemStack(ItemStack stack) {
 				return GeneticsItems.GrowthMedium.get(1).isItemEqual(stack);
 			}
 		});
 
-		Incubator.RECIPES.add(new IncubatorRecipe(GeneticLiquid.Bacteria.get(2), null, 0.5f, 0.2f) {
+		Incubator.RECIPES.add(new IncubatorRecipe(GeneticLiquid.Bacteria.get(200), null, 0.5f, 0.2f) {
 			@Override
 			public boolean isItemStack(ItemStack stack) {
 				return stack.getItem() == Items.sugar;
 			}
-		}.setOutputStack(GeneticsItems.Enzyme.get(1)));
+		}.setOutputStack(GeneticsItems.Enzyme.get(5)));
 
-		Incubator.RECIPES.add(new IncubatorRecipe(GeneticLiquid.BacteriaPoly.get(0), GeneticLiquid.BacteriaPoly.get(5), 0.05f) {
+		Incubator.RECIPES.add(new IncubatorRecipe(GeneticLiquid.BacteriaPoly.get(0), GeneticLiquid.BacteriaPoly.get(500), 0.05f) {
 			@Override
 			public boolean isItemStack(ItemStack stack) {
 				return GeneticsItems.GrowthMedium.get(1).isItemEqual(stack);
 			}
 		});
 
-		Incubator.RECIPES.add(new IncubatorRecipe(GeneticLiquid.BacteriaVector.get(0), GeneticLiquid.BacteriaVector.get(5), 0.05f) {
+		Incubator.RECIPES.add(new IncubatorRecipe(GeneticLiquid.BacteriaVector.get(0), GeneticLiquid.BacteriaVector.get(500), 0.05f) {
 			@Override
 			public boolean isItemStack(ItemStack stack) {
 				return GeneticsItems.GrowthMedium.get(1).isItemEqual(stack);
 			}
 		});
 
-		Incubator.RECIPES.add(new IncubatorRecipe(GeneticLiquid.Bacteria.get(10), GeneticLiquid.BacteriaPoly.get(10), 0.1f) {
+		Incubator.RECIPES.add(new IncubatorRecipe(GeneticLiquid.Bacteria.get(500), GeneticLiquid.BacteriaPoly.get(1000), 0.1f) {
 			@Override
 			public boolean isItemStack(ItemStack stack) {
 				return new ItemStack(Items.dye, 1, 15).isItemEqual(stack);
 			}
 		});
 
-		Incubator.RECIPES.add(new IncubatorRecipe(GeneticLiquid.Bacteria.get(10), GeneticLiquid.BacteriaVector.get(10), 0.05f) {
+		Incubator.RECIPES.add(new IncubatorRecipe(GeneticLiquid.Bacteria.get(500), GeneticLiquid.BacteriaVector.get(1000), 0.05f) {
 			@Override
 			public boolean isItemStack(ItemStack stack) {
 				return new ItemStack(Items.blaze_powder).isItemEqual(stack);
