@@ -34,47 +34,47 @@ public class Incubator {
         Incubator.RECIPES.add(
                 new IncubatorRecipe(
                         GeneticsItems.GrowthMedium.get(1),
-                        Binnie.Liquid.getLiquidStack("water", 25),
-                        GeneticLiquid.GrowthMedium.get(25),
+                        Binnie.Liquid.getLiquidStack("water", 250),
+                        GeneticLiquid.GrowthMedium.get(500),
                         0.2f));
         Incubator.RECIPES.add(
                 new IncubatorRecipe(
                         new ItemStack(Items.wheat),
-                        GeneticLiquid.GrowthMedium.get(25),
-                        GeneticLiquid.Bacteria.get(5),
+                        GeneticLiquid.GrowthMedium.get(250),
+                        GeneticLiquid.Bacteria.get(500),
                         0.2f));
         Incubator.RECIPES.add(
                 new IncubatorRecipe(
                         GeneticsItems.GrowthMedium.get(1),
                         GeneticLiquid.Bacteria.get(0),
-                        GeneticLiquid.Bacteria.get(5),
+                        GeneticLiquid.Bacteria.get(500),
                         0.05f));
         Incubator.RECIPES.add(
-                new IncubatorRecipe(new ItemStack(Items.sugar), GeneticLiquid.Bacteria.get(2), null, 0.5f, 0.2f)
-                        .setOutputStack(GeneticsItems.Enzyme.get(1)));
+                new IncubatorRecipe(new ItemStack(Items.sugar), GeneticLiquid.Bacteria.get(200), null, 0.5f, 0.2f)
+                        .setOutputStack(GeneticsItems.Enzyme.get(5)));
         Incubator.RECIPES.add(
                 new IncubatorRecipe(
                         GeneticsItems.GrowthMedium.get(1),
                         GeneticLiquid.BacteriaPoly.get(0),
-                        GeneticLiquid.BacteriaPoly.get(5),
+                        GeneticLiquid.BacteriaPoly.get(500),
                         0.05f));
         Incubator.RECIPES.add(
                 new IncubatorRecipe(
                         GeneticsItems.GrowthMedium.get(1),
                         GeneticLiquid.BacteriaVector.get(0),
-                        GeneticLiquid.BacteriaVector.get(5),
+                        GeneticLiquid.BacteriaVector.get(500),
                         0.05f));
         Incubator.RECIPES.add(
                 new IncubatorRecipe(
                         new ItemStack(Items.dye, 1, 15),
-                        GeneticLiquid.Bacteria.get(10),
-                        GeneticLiquid.BacteriaPoly.get(10),
+                        GeneticLiquid.Bacteria.get(500),
+                        GeneticLiquid.BacteriaPoly.get(1000),
                         0.1f));
         Incubator.RECIPES.add(
                 new IncubatorRecipe(
                         new ItemStack(Items.blaze_powder),
-                        GeneticLiquid.Bacteria.get(10),
-                        GeneticLiquid.BacteriaVector.get(10),
+                        GeneticLiquid.Bacteria.get(500),
+                        GeneticLiquid.BacteriaVector.get(1000),
                         0.05f));
 
         if (BinnieCore.isApicultureActive()) {

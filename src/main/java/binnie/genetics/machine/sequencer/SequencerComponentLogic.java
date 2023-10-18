@@ -31,7 +31,7 @@ public class SequencerComponentLogic extends ComponentProcess
 
     @Override
     public int getProcessLength() {
-        return (int) (19200.0f * getSequenceStrength());
+        return (int) (368.0f * getSequenceStrength());
     }
 
     @Override

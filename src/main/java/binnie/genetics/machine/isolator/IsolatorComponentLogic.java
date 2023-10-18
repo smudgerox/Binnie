@@ -20,8 +20,8 @@ import forestry.api.genetics.ISpeciesRoot;
 
 public class IsolatorComponentLogic extends ComponentProcessSetCost implements IProcess {
 
-    protected float enzymePerProcess = 0.5f;
-    protected float ethanolPerProcess = 10.0f;
+    protected float enzymePerProcess = 0.005f;
+    protected float ethanolPerProcess = 0.5f;
 
     public IsolatorComponentLogic(Machine machine) {
         super(machine, Isolator.RF_COST, Isolator.TIME_PERIOD);

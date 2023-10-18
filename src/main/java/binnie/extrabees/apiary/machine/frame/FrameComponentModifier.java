@@ -24,7 +24,7 @@ public class FrameComponentModifier extends ComponentBeeModifier implements IBee
         }
 
         World world = getMachine().getTileEntity().getWorldObj();
-        int wear = Math.round(amount * 5 * Binnie.Genetics.getBeeRoot().getBeekeepingMode(world).getWearModifier());
+        int wear = Math.round(amount * 1 * Binnie.Genetics.getBeeRoot().getBeekeepingMode(world).getWearModifier());
         getInventory().setInventorySlotContents(
                 AlvearyFrame.SLOT_FRAME,
                 getHiveFrame().frameUsed(
