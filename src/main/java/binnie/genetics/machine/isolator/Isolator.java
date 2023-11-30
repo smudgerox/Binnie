@@ -11,6 +11,6 @@ public class Isolator {
     public static final int TANK_ETHANOL = 0;
     public static final int RF_COST = 240000;
     public static final int TIME_PERIOD = 240;
-    public static final int POWER_CAPACITY = 1000000;
+    public static final int POWER_CAPACITY = 100000;
     public static final int ETHANOL_CAPACITY = 64000;
 }
