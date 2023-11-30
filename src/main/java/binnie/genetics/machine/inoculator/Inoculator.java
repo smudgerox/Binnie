@@ -20,7 +20,7 @@ public class Inoculator {
     public static final int TANK_VECTOR = 0;
     public static final int TANK_CAPACITY = 64000;
     public static final int RF_COST = 600000;
-    public static final int TIME_PERIOD = 12000;
+    public static final int TIME_PERIOD = 200;
     public static final int POWER_STORAGE = 2400000;
 
     public static void setGene(IGene gene, ItemStack target, int chromoN) {
